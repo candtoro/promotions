@@ -21,7 +21,7 @@ public class Config {
     private String externalBasePath;
 
     @Bean
-    public NationalArchivesClient getNationalArchiveCLient() {
+    public NationalArchivesClient getNationalArchiveClient() {
         return getRetrofitClient(externalBasePath).create(NationalArchivesClient.class);
     }
 

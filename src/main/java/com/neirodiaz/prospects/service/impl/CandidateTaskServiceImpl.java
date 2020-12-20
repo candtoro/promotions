@@ -13,7 +13,6 @@ import com.neirodiaz.prospects.task.NationalArchivesTask;
 import com.neirodiaz.prospects.task.NationalRegistryTask;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -29,7 +28,6 @@ import java.util.stream.Collectors;
  */
 @Log4j2
 @Service
-@Qualifier("CandidateTaskService")
 public class CandidateTaskServiceImpl implements CandidateService {
 
     @Autowired
